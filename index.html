@@ -5,7 +5,11 @@
 var warning = true;
 window.onbeforeunload = function() {  
   if (warning) {  
-    return "You have made changes on this page that you have not yet confirmed. If you navigate away from this page you will lose your unsaved changes";  
+    return "Don't leave. Why are you leaving the page?";  
+    }  
+}
+if (warning) {  
+    return "no? you can't.";  
     }  
 }
 
